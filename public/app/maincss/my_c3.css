@@ -1,0 +1,64 @@
+.c3-legend-item {
+  fill: #0c0c0c;
+  font-size:10px !important;
+ }
+ .c3-title {
+  font-size: 1 em !important;
+  font-weight: bold;
+  fill: #290709;
+}
+.c3-axis-x-label{
+  font-weight:bold;
+  font-size:14px !important;
+  fill: #170a63;
+}
+.c3-axis-y g{
+  font-weight:bold;
+  font-size: 14px !important;
+  fill: #640c0c;
+ }
+.c3-axis-y2-label {
+  font-weight:bold;
+  font-size: 14px !important;
+  fill: #2b4607;
+}
+
+.c3-axis-y text {
+  font-weight:bold;
+  font-size: 20px !important;
+  fill: #640c0c;
+}
+.c3-axis-y2 text {
+  font-weight:bold;
+  font-size: 20px !important;
+  fill: #2b4607;
+
+}
+.c3-axis-x text {
+  font-weight:bold;
+  font-size: 14px !important;
+  fill: rgb(58, 57, 9);
+
+}
+
+
+/* .c3-chart-text text 
+{
+    font-size: 18px !important;
+} */
+/* .c3-region.regionY {
+  fill: green !important;
+}
+.c3-region.regionY2 {
+  fill: rgb(8, 199, 8);
+}
+
+.c3-axis-x.tick {
+  font-size: 1.2em !important;
+  color: rgb(38, 17, 160);
+}
+
+.c3-axis-y.tick {
+  font-size: 0.9em !important;
+  color: rgb(160, 17, 29);
+} */

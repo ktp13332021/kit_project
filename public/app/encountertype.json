@@ -1,0 +1,11 @@
+[
+	{
+		"ID": "1",
+		"encountertype": "OPD"
+	},
+	{
+		"ID": "2",
+		"encountertype": "IPD"
+	}
+
+]

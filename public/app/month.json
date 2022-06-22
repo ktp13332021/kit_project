@@ -1,0 +1,74 @@
+[
+	{
+		"ID": "1",
+		"monthdesc": "JAN",
+		"monthID": "01",
+		"days": "31"
+	},
+	{
+		"ID": "2",
+		"monthdesc": "FEB",
+		"monthID": "02",
+		"days": "28"
+	},
+	{
+		"ID": "3",
+		"monthdesc": "MAR",
+		"monthID": "03",
+		"days": "31"
+	},
+	{
+		"ID": "4",
+		"monthdesc": "APR",
+		"monthID": "04",
+		"days": "30"
+	},
+	{
+		"ID": "5",
+		"monthdesc": "MAY",
+		"monthID": "05",
+		"days": "31"
+	},
+	{
+		"ID": "6",
+		"monthdesc": "JUNE",
+		"monthID": "06",
+		"days": "30"
+	},
+	{
+		"ID": "7",
+		"monthdesc": "JULY",
+		"monthID": "07",
+		"days": "31"
+	},
+	{
+		"ID": "8",
+		"monthdesc": "AUG",
+		"monthID": "08",
+		"days": "31"
+	},
+	{
+		"ID": "9",
+		"monthdesc": "SEP",
+		"monthID": "09",
+		"days": "30"
+	},
+	{
+		"ID": "10",
+		"monthdesc": "OCT",
+		"monthID": "10",
+		"days": "31"
+	},
+	{
+		"ID": "11",
+		"monthdesc": "NOV",
+		"monthID": "11",
+		"days": "30"
+	},
+	{
+		"ID": "12",
+		"monthdesc": "DEC",
+		"monthID": "12",
+		"days": "31"
+	}
+]

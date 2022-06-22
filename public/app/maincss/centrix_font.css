@@ -1,0 +1,54 @@
+.fontss {font-size: 0.4em !important;}
+.fonts {font-size: 0.5em !important;}
+.fontsn {font-size: 0.6em !important;}
+.fontn { font-size: 0.7em !important;}
+.fontmn { font-size: 0.9em !important;}
+.fontm {font-size: 1em !important;}
+.fontl {font-size: 1.2em !important;}
+.fontxl {font-size: 2em !important;}
+.fontxxl {font-size: 3em !important;}
+/* .fontss {font-size: 0.7em !important;}
+.fonts {font-size: 0.8em !important;}
+.fontsn {font-size: 0.9em !important;}
+.fontn { font-size: 1em !important;}
+.fontmn { font-size: 1.2em !important;}
+.fontm {font-size: 1.3em !important;}
+.fontl {font-size: 1.7em !important;}
+.fontxl {font-size: 2.4em !important;}
+.fontxxl {font-size: 3.5em !important;} */
+.fontbold{font-style: bold !important;}
+.fontitalic{font-style: italic !important;}
+.fontunderline{text-decoration: underline !important;}
+
+.fontbluegray50{color:#ECEFF1 !important;}
+.fontbluegray100{color:#CFD8DC !important;}
+.fontbluegray200{color:#B0BEC5 !important;}
+.fontbluegray300{color:#90A4AE !important;}
+.fontbluegray400{color:#607D8B !important;}
+.fontbluegray500{color:#607D8B !important;}
+.fontbluegray600{color:#546E7A !important;}
+.fontbluegray700{color:#455A64 !important;}
+.fontbluegray800{color:#37474F !important;}
+.fontbluegray900{color:#263238 !important;}
+.fontBlack{color:#000000 !important;}
+.fontWhite{color:#FFFFFF !important;}
+
+.fontTeal50{color:#E0F2F1 !important;}
+.fontTeal100{color:#B2DFDB !important;}
+.fontTeal200{color:#80CBC4 !important;}
+.fontTeal300{color:#4DB6AC !important;}
+.fontTeal400{color:#26A69A !important;}
+.fontTeal500{color:#009688 !important;}
+.fontTeal600{color:#00897B !important;}
+.fontTeal700{color:#00796B !important;}
+.fontTeal800{color:#00695C !important;}
+.fontTeal900{color:#004D40 !important;}
+.fontTeal1{color:#A7FFEB !important;}
+.fontTeal2{color:#64FFDA !important;}
+.fontTeal4{color:#1DE9B6 !important;}
+.fontTeal7{color:#00BFA5 !important;}
+
+.fontred1 { color: #fa0202 !important; }
+.fontgreen1 { color: #92bfc7 !important; }
+
+.centrixgrey1 { color: #f3f3f3 !important; }

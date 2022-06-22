@@ -1,0 +1,123 @@
+<html ng-app="myApp" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <title> BI</title>
+  <meta name="apple-mobile-web-app-title" content="PRINC HEALTH BI" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="">
+  <meta name="viewport"
+    content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 3, user-scalable =yes" />
+  <link rel="icon" sizes="192x192" href="../../app/image/chart.png">
+
+  <!-- <link href='https://fonts.googleapis.com/css?family=Pridi' rel='stylesheet'> -->
+<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script> -->
+
+  <link rel="stylesheet" href="../../link_require/angular-material.min.css">
+  <script src="../../link_require/angular.min.js"></script>
+  <script src="../../link_require/angular-animate.min.js"></script>
+  <script src="../../link_require/angular-aria.min.js"></script>
+  <script src="../../link_require/angular-messages.min.js"></script>
+  <script src="../../link_require/angular-material.min.js"></script>
+  <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500"> -->
+  <link rel="stylesheet" href="../../app/search/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../app/search/assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../app/search/assets/css/form-elements.css">
+  <link rel="stylesheet" href="../../app/search/assets/css/style.css">
+
+
+  <!-- <script src="../../bower_components/angular/angular-route.min.js"></script> -->
+  <script src="../../app/search/assets/js/jquery-1.11.1.min.js"></script>
+  <script src="../../app/search/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../app/search/assets/js/jquery.backstretch.min.js"></script>
+  <script src="../../app/search/assets/js/scripts.js"></script>
+  <script src="../../node_modules/moment/min/moment.min.js"></script>
+  <!-- <script src="../../bower_components/bootstrap/ui-bootstrap-tpls-0.10.0.min.js"></script> -->
+  <!-- //from web -->
+  <!-- <link rel="stylesheet" href="../../../css/bootstrap.css"> -->
+  <!-- <link href="../../../css/style.css" rel='stylesheet' type='text/css' /> -->
+
+  <script type="text/javascript" src="../../node_modules/async/dist/async.min.js"></script>
+  <link href="../../template/bi/c3/c3.css" rel="stylesheet" type="text/css">
+  <script src="../../template/bi/d3/d3.min.js" charset="utf-8"></script>
+  <script src="../../template/bi/c3/c3.min.js"></script>
+  <link rel="stylesheet" href="../../app/addon_bi/css/mycss.css">
+
+  <script src="../app/addon_bi/api.controller.js"></script>
+  <script type="text/javascript" src="../../app/app.factory.js"></script>
+  <script type="text/javascript" src="../../app/app2.factory.js"></script>
+</head>
+
+<body ng-controller="addonapiController as vm">
+
+  <div class="container">
+    <div class="box-1 " >
+      <div flex layout="row" style="width:90vW;justify-content: space-around;">
+        <div class="marginleft15"></div>
+        <div class="text1">{{sitename}}</div>
+        <div class="marginright15">
+          <md-button class="  md-raised " aria-label="Favorite" ng-click="changechart()">
+            {{vm.lba_btn}}
+          </md-button>
+          <md-button class="md-icon-button  md-raised " aria-label="Favorite" ng-click="refreshdata()">
+            <!-- <md-icon ng-bind="'refresh'" style="width:25px"></md-icon> -->
+            <img src="../../app/image/refresh.png" alt=""  style="width:25px">
+          </md-button>
+        </div>
+      </div>
+    </div>
+    <div flrx layout="row">
+      <div class="box-2">
+        <div id='b2' class="box_main">
+          <p class="head1"> {{datetime}} </p>
+          <p class="p1"> OPD : {{opd_main}} </p>
+          <!-- <p class="p2">  (case ตรวจ : {{opd_main-thbh_chkup_mobile-thbh_chkup}}) </p>
+        <p class="p2">  (mobile check : {{thbh_chkup_mobile}}) </p>
+        <p class="p2">  ( check up : {{thbh_chkup}}) </p> -->
+          <p class="p1"> IPD : {{ total }} ( {{ totalbed }} ) </p>
+          <div class="panel-body" runat="server" style="overflow-y:scroll; height:60vH">
+          <table class="table1" >
+            <tr class="tr1" ng-repeat="detail in caseipd">
+              <td class="td1 align-l  fontsn ">{{detail.wardname}}</td>
+              <td class="td1 align-r  fontn ">{{detail.count | number:0}}</td>
+              <td class="td1 align-r  fontsn ">({{detail.bedcount | number:0}})</td>
+              <td class="td1 align-r  fontss ">({{detail.count/detail.bedcount*100 | number:0}})%</td>
+            </tr>
+          </table>
+        </div>
+        </div>
+
+
+      </div>
+      <div class="box-3">
+        <div flex layout="row" ng-show="vm.show_month==false;">
+          <div flex layout="column">
+            <div class=" box1" id='opd_visithour'></div>
+            <div class=" box1" id='opd_bydepartment'> </div>
+          </div>
+          <div class=" box2" id='wardchart'> </div>
+        </div>
+        <div flex layout="row" ng-show="vm.show_month==true;">
+          <div flex layout="column">
+            <div class=" box1" id='daily_bedoccupancy'> </div>
+            <div class=" box1" id='chartadmitdc'> </div>
+          </div>
+          <div flex layout="column">
+            <div class=" box1" id='opd_chartdaily'> </div>
+            <div class=" box1" id='revenue_chart'> </div>
+          </div>
+        </div>
+        <!-- <div class=" box1" id='opd_chartdaily'> </div> -->
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
